@@ -1,4 +1,3 @@
-// remote/webpack.config.js
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const ModuleFederationPlugin = require("webpack/lib/container/ModuleFederationPlugin");
 const path = require("path");
@@ -34,7 +33,7 @@ module.exports = {
       name: "Remote",
       filename: "moduleEntry.js",
       exposes: {
-        "./App": "./src/App",
+        "./App": "./src/App"
       },
       shared: {
         ...dependencies,
